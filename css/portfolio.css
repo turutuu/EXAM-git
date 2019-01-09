@@ -1,0 +1,267 @@
+/*/// basic things /*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1C1F1F;
+	font-family: quicksand;
+	color: #BEBBBB;
+}
+
+main {
+	font-family: quicksand
+}
+
+h1 {
+	text-align: center;
+	padding: 1em;
+}
+
+nav a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #bebbbb;
+	text-decoration: none;
+}
+
+nav a:visited {
+	color: #bebbbb;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #D5B942;
+	text-decoration: none;
+	transition: 1s;
+}
+
+nav a:active {
+	color: #D5B942;
+	visibility: visible;
+}
+
+main {
+	color: #bebbbb;
+}
+
+.responsive {
+	max-width: 700px;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+/*/// Burger menu ///*/
+
+nav {
+	display: none;
+}
+
+#menu {
+	display: none;
+}
+
+#menu:checked ~ nav {
+	/* nav right after the input*/
+	display: block;
+}
+
+label {
+	color: #D5B942;
+	font-size: 2em;
+	padding: 0.3em;
+}
+
+a {
+	font-family: quicksand;
+	color: #FCF7F8;
+	text-decoration: none;
+	padding-bottom: 2em;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #D5B942;
+	text-decoration: none;
+}
+
+/*// rutatext - comelate//*/
+#rutapaulatext {
+	width: 320px;
+	fill: #bebbbb;
+	border: none;
+	margin: 0 auto;
+	display: block;
+}
+
+#rutatext {
+	width: 200px;
+	fill: #bebbbb;
+	animation: draw 2s alternate infinite;
+	border: none;
+	margin: 0 auto;
+	display: block;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+#turutuu {
+	background-image: url("pukbackg.png");
+	background-size: auto;
+	background-position: left;
+	height: 350px;
+
+}
+
+@keyframes draw {
+	25% {
+		fill: #FCF7F8;
+		transition: 0.2s;
+	}
+
+	50% {
+		fill: #BEBBBB;
+		transition: 0.2s;
+	}
+
+	75% {
+		fill: #4C5454;
+		transition: 0.2s;
+	}
+
+	100% {
+		fill: #1C1F1F;
+		transition: 0.2s;
+	}
+}
+
+/*// index page - anti school portfolio //*/
+
+.thumbnails {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.photothumbnail {
+	opacity: 0.3;
+}
+
+.photothumbnail:hover {
+	opacity: 1;
+	transition: 0.3s;
+
+}
+
+.socialmediacontainer {
+	width: 280px;
+	margin: 0 auto;
+	display: block;
+}
+
+.socialmedia {
+	width: 65px;
+	padding: 1em;
+	display: inline-block;
+}
+
+.logocontainer {
+	width: 280px;
+	margin: 0 auto;
+	display: block;
+}
+
+.logo {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+
+/*// responsive //*/
+
+/*/// medium screen styling ///*/
+
+
+
+@media all and (min-width: 750px) {
+
+	.container {
+		max-width: 960px;
+		margin: 0 auto;
+		display: block;
+		padding-left: 2em;
+		padding-right: 2em;
+
+	}
+
+	.logocontainer {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.logo {
+		width: 30px;
+		display: inline-block;
+		padding: 0.5em;
+	}
+
+	.thumbnailcontainer {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.thumbnails {
+		width: 32%;
+		display: inline-block;
+		padding: 1em;
+		;
+	}
+
+	.socialmediacontainer {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	.socialmedia {
+		width: 30px;
+		display: inline-block;
+
+	}
+
+	nav {
+		display: flex;
+		overflow: hidden;
+		text-align: center;
+	}
+
+	input:checked ~ nav {
+		display: block;
+	}
+
+	header label {
+		display: none;
+	}
+
+	footer {
+		text-align: center;
+	}
+}
